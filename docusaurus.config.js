@@ -13,7 +13,9 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          routeBasePath: '/', // Serve docs at site's root
         },
+        blog: false, // Optional: disable blog
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
